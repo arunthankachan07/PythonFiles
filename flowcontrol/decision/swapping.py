@@ -7,19 +7,19 @@ large = 0
 if(num1<num2)&(num1<num3):
     small=num1
     if(num2<num3)&(num2<num1):
-    small=num2
+        small=num2
     else:
-    small=num3
+        small=num3
 elif(num1<num2)&(num1<num3):
     middle=num1
     if(num2>num1)&(num2<num1):
-    middle=num2
+        middle=num2
     else:
-    middle=num3
+        middle=num3
 elif(num1>num2)&(num1>num3):
     large=num1
     if(num2>num3)&(num2>num1):
-    large=num2
+        large=num2
     else:
-    large=num3
+        large=num3
 print("sorted order:",small,middle,large)
