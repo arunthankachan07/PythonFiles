@@ -7,6 +7,7 @@ for i in range(0,l):
         if(s[i]==s[j]):
             # count+=1
             print(s[i])
+    break
 
     # k=i+1
     # for j in range(k,l):
