@@ -8,6 +8,8 @@ for word in words:
         dict[word]+=1
 print(text)
 print(dict)
-maxval=max(dict,key=dict.get)
-print(maxval)
-print(maxval,"occurs",dict.get(maxval),"times")
+data=sorted(dict,key=dict.get,reverse=True) #descending
+print("Descending-",data)
+data=sorted(dict,key=dict.get) #ascending
+print("Ascending-",data)
+
