@@ -10,7 +10,7 @@ students={
 }
 print(students[1000]) #print students details of id 1000
 print(students[1000]["name"]) #print name from students id  1000
-
+print(students)
 
 id=int(input("enter student id"))
 if id in students:
