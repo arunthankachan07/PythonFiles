@@ -1,7 +1,7 @@
 moviedata=open("movies.csv", "r")
 dict = {}
 for data in moviedata:
-    details = data.strip("\n").split(",")
+    details = data.rstrip("\n").split(",")
     year=details[2]
     if year not in dict:
         # dict["movie_id"]=m_id
@@ -9,4 +9,5 @@ for data in moviedata:
     else:
         dict[year]+=1
 print(max(dict,key=dict.get))
+print(dict)
        # break

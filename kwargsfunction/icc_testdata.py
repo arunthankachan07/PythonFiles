@@ -12,7 +12,7 @@ icc_test_wc_data={
 }
 for team in icc_test_wc_data:
     #print points of each team
-    #print(icc_test_wc_data[team]["id"]," - ",icc_test_wc_data[team]["points"])
+    print(icc_test_wc_data[team]["id"]," - ",icc_test_wc_data[team]["points"])
     won=icc_test_wc_data[team]["won"]
     if(won>5):
         # print("more than 5 matches won")
@@ -27,7 +27,6 @@ for data in icc_test_wc_data:
     else:
         pass
         break
-
 #print details based on input
 id=input("Enter a team name")
 property=input("Enter property")
