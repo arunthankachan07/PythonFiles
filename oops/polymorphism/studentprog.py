@@ -15,6 +15,8 @@ students.append(st1)
 students.append(st2)
 students.append(st3)
 mark=[]
+map()
+
 for student in students:
 
 
