@@ -6,8 +6,8 @@
 
 import  re
 #rule='[a-k][369][a-zA-Z]*'
-rule="[K][L]\d{2}[A-Z]{2}\d{4}"
-rule="[6-9]\d{9}"
+rule="[K][L]\d{2}[A-Z]{2}\d{4}" #vehicle reg num validation
+rule="[6-9]\d{9}"   #mobile num validation
 var_name=input("Enter a variable name")
 matcher=re.fullmatch(rule,var_name)   #apply the pattern to all of the string... returning a match object...or none if no match
 if matcher==None:
