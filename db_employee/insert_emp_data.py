@@ -9,7 +9,7 @@ db=mysql.connector.connect(
 )
 cursor=db.cursor()
 empdata = open("data_employee", "r")
-list=[]
+
 for data in empdata:
     emp_dat = data.rstrip("\n").split(",")
     insert_query="INSERT INTO employee(eid,ename,desig,salary) VALUES (%s,%s,%s,%s)"
